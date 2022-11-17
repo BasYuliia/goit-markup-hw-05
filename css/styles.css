@@ -322,29 +322,24 @@ img {
   position: relative;
   display: flex;
 }
-.work-overlay {
+
+.work-owerlay-title {
   width: 370px;
   height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
 
   position: absolute;
-  display: block;
+
   background: rgba(47, 48, 58, 0.8);
   bottom: 0;
-}
-.work-owerlay-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
+
   line-height: calc(16 / 14);
-  text-align: center;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   align-items: center;
 
   color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 /* НАША КОМАНДА */
 .team {
@@ -493,6 +488,7 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-decoration: none;
+  transition: color 250ms var(--timing-cub);
 }
 
 .adress-list {
@@ -593,7 +589,6 @@ img {
   background: var(--logo-text-web-hoover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 .flex {
   display: flex;
@@ -620,19 +615,17 @@ img {
 }
 .portfolio-list {
   display: block;
-  position: relative;
   text-decoration: none;
+}
+.portfolio-sempl {
+  position: relative;
   overflow: hidden;
 }
 .portfolio.desc {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
-
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
@@ -688,7 +681,6 @@ img {
   opacity: 0;
   scale: 0;
   pointer-events: none;
-  visibility: hidden;
 }
 .modal {
   position: absolute;
